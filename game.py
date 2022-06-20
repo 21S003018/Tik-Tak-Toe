@@ -49,8 +49,8 @@ class TikTacToe():
                 self.p1.informed_draw(self.state)
                 self.p2.informed_draw(self.state)
                 break
-            if MODE == TRAIN:
-                self.visualize_board(f"Current board is")
+            # if MODE == TRAIN:
+            #     self.visualize_board(f"Current board is")
             action_p2, new_state = self.p2.take_action(self.state.copy())
             if not MODE == MATCH:
                 self.p1.update_value_function(self.state, new_state)

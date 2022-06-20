@@ -39,10 +39,6 @@ class ReinfrocementLearningPlayer(Player):
         else:
             exploit_rate = 0.8
 
-        print(candidates)
-        print(candidates_value_function)
-        exploit_rate = 1
-
         if rd.random() < exploit_rate:
             action, next_state = candidates[candidates_value_function.index(
                 max(candidates_value_function))]

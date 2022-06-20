@@ -3,14 +3,14 @@ from models import ReinfrocementLearningPlayer
 from const import *
 from game import TikTacToe
 p1 = ReinfrocementLearningPlayer(X)
-# p2 = RandomPlayer(O)
-p2 = HumanPlayer(O)
+p2 = RandomPlayer(O)
+# p2 = HumanPlayer(O)
 game = TikTacToe(p1, p2)
 p1.set_env(game)
 W = "win"
 D = "draw"
 L = "lose"
-ROUNDS = 1
+ROUNDS = 100
 rates = {W: 0, D: 0, L: 0}
 for i in range(ROUNDS):
     if i % 100 == 0:

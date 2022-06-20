@@ -8,5 +8,5 @@ DEBUG = "debug"
 TRAIN = "train"
 MATCH = "match"
 # MODE = DEBUG
-MODE = TRAIN
-# MODE = MATCH
+# MODE = TRAIN
+MODE = MATCH
